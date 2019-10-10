@@ -24,9 +24,7 @@ class KeyValStr(object):
         return result[1]
 
     def _index(self, string, obj=None):
-        if not obj:
-            obj = self.parser
-
+        obj = obj or self.parser
         result = None
 
         for index, value in enumerate(obj):
